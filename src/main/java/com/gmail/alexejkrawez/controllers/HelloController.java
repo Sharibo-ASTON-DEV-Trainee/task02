@@ -1,4 +1,4 @@
-package com.gmail.alexejkrawez;
+package com.gmail.alexejkrawez.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
 
-    @GetMapping("hello-world")
+    @GetMapping("/hello-world")
     public String sayHello() {
-        return "hello-world";   // вернёт пользователю hello-world.html страницу
+        return "hello-world";
     }
 
 
